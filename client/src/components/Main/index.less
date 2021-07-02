@@ -1,0 +1,37 @@
+.main {
+    // position: absolute;
+    // left: 230px;
+    // width: calc(100% - 230px);
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    overflow: hidden;
+    overflow-y: auto;
+    .left {
+        overflow: hidden;
+        flex: 1;
+        .head-title {
+            padding: 10px 15px 10px;
+            height: 110px;
+            box-sizing: border-box;
+        }
+        .article-list-wrap {
+            padding-top: 20px;
+            background-color: #f6f8f9;
+        }
+    }
+
+    .right {
+        width: 248px;
+        height: 1200px;
+        // float: right;
+        background-color: #000;
+        transition: width 0.5s ease-in-out;
+    }
+
+    @media screen and (max-width: 1100px) {
+        .right {
+            width: 0;
+        }
+    }
+}

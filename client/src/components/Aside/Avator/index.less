@@ -1,0 +1,37 @@
+.avator-area {
+    width: 230px;
+    overflow: hidden;
+    padding: 25px 5px;
+    .avator-area-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .panel-avator {
+            padding-left: 20px;
+            color: #777;
+            .name-wrap {
+                font-size: 14px;
+                font-size: 0.9rem;
+                font-weight: 700;
+                cursor: pointer;
+                max-width: 100px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            .sign-wrap {
+                max-width: 100px;
+                overflow: hidden;
+                margin-top: 5px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+}
