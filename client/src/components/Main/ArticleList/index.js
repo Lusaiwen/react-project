@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Card from '@/components/common/Card';
 import { getBlogs } from '@/services/blogService';
 import Pager from '../../common/Pager';
+import styles from './index.less';
 
 export default function index() {
     const [cards, setCards] = useState([]);
@@ -33,8 +34,7 @@ export default function index() {
                 newCards.map((el, index) => {
                     return <Card {...el} key={el.id} />;
                 })}
-            {
-                (cards.length > 5) && 
+            {cards.length > 5 && (
                 <Pager
                     current={curPage}
                     total={cards && cards.length}
@@ -47,7 +47,7 @@ export default function index() {
                         );
                     }}
                 />
-            }
+            )}
         </>
     );
 }

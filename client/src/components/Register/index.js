@@ -41,21 +41,18 @@ function Register(props) {
                     tiText="两次密码不一致"
                 />
 
+
                 <InputForm
                     name="name"
                     ref={nameRef}
                     text="我的名字"
-                    type="password"
-                    // show={nameShow}
-                    // tiText=""
+                    type='text'
                 />
                 <InputForm
                     name="motto"
                     ref={mottoRef}
                     text="我的格言"
-                    type="password"
-                    // show={twoShow}
-                    // tiText="两次密码不一致"
+                    type='text'
                 />
                 <div className="button">
                     <Button
